@@ -1,7 +1,11 @@
 <h1 align="center">🚀 Best Practices Landing Zone Setup Using BICEP</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=0078D4&center=true&vCenter=true&width=800&lines=Azure+Landing+Zone+Automation;Infrastructure+as+Code+with+BICEP;Enterprise+Ready+Deployment+Patterns" />
+<img src="https://skillicons.dev/icons?i=azure,docker,terraform,github,vscode" />
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=0078D4&center=true&width=700&lines=Azure+BICEP+Templates;Landing+Zone+Architecture;Secure+%26+Scalable+Infrastructure" />
 </p>
 
 # Best Practices Landing Zone Setup Using BICEP
@@ -18,9 +22,6 @@ By the end of this notes, you will clearly understand:
 
 So let's get started."
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0078D4,100:00C2FF&height=220&section=header&text=Landing%20Zone%20Using%20BICEP&fontSize=40&fontColor=ffffff"/>
-</p>
 
 ---
 

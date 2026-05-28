@@ -11,8 +11,9 @@ Bicep is a Domain Specific Language (DSL) developed by Microsoft for deploying A
 It is a modern alternative to ARM Templates.
 
 Instead of manually creating resources from Azure Portal:
+---
 
-✅ We write code
+✅ We write code 
 ✅ Store infra in Git
 ✅ Reuse infra
 ✅ Automate deployments

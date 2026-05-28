@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=0078D4&center=true&width=700&lines=Azure+BICEP+Templates;Landing+Zone+Architecture;Secure+%26+Scalable+Infrastructure" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=0078D4&center=true&width=700&lines=BEST+PRACTICES+LANDINGZONE;Landing+Zone+USING+BICEP;Secure+%26+Scalable+Infrastructure" />
 </p>
 
 # Best Practices Landing Zone Setup Using BICEP

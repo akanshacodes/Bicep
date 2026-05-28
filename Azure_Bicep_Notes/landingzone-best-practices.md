@@ -1,3 +1,9 @@
+<h1 align="center">🚀 Best Practices Landing Zone Setup Using BICEP</h1>
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&pause=1000&color=0078D4&center=true&vCenter=true&width=800&lines=Azure+Landing+Zone+Automation;Infrastructure+as+Code+with+BICEP;Enterprise+Ready+Deployment+Patterns" />
+</p>
+
 # Best Practices Landing Zone Setup Using BICEP
 
 
@@ -12,6 +18,9 @@ By the end of this notes, you will clearly understand:
 
 So let's get started."
 
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0078D4,100:00C2FF&height=220&section=header&text=Landing%20Zone%20Using%20BICEP&fontSize=40&fontColor=ffffff"/>
+</p>
 
 ---
 
@@ -475,15 +484,3 @@ Thank you. I'm happy to take any questions."
 
 ---
 
-## 🗣️ Delivery Tips
-
-- **Speak at 60–70% of your normal reading speed.** Audiences need time to absorb technical content.
-- **Pause after every numbered point.** Let it land before moving on.
-- **Use the whiteboard / slide diagrams for Hub-Spoke.** Visual always helps for networking.
-- **For the code snippets** — don't read the code line by line. Say *"as you can see on screen, we are doing X"* and explain the concept.
-- **Total estimated speaking time:** ~35–45 minutes with pauses. Add 10–15 minutes for Q&A.
-
----
-
-*Script prepared for: Azure Landing Zone with Bicep — Best Practices Presentation*
-*Version: 1.0 | Language: English*

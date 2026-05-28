@@ -13,19 +13,19 @@ It is a modern alternative to ARM Templates.
 Instead of manually creating resources from Azure Portal:
 ---
 
-## 🚀 Benefits of Infrastructure as Code
+##  Benefits of Infrastructure as Code
 
-- ✅ Infrastructure is fully automated
-- ✅ Deployments become repeatable
-- ✅ Reusable modules improve scalability
-- ✅ Git provides version control
-- ✅ Consistency across all environments
-- ✅ Faster deployments with CI/CD
-- ✅ Reduced manual errors
+-  Infrastructure is fully automated
+- Deployments become repeatable
+- Reusable modules improve scalability
+- Git provides version control
+-  Consistency across all environments
+- Faster deployments with CI/CD
+- Reduced manual errors
 
 ---
 
-# 🧠 Why Bicep?
+# Why Bicep?
 
 | Feature         | Benefit                     |
 | --------------- | --------------------------- |
@@ -39,7 +39,7 @@ Instead of manually creating resources from Azure Portal:
 
 ---
 
-# 🏗️ What is Azure Landing Zone?
+# What is Azure Landing Zone?
 
 Azure Landing Zone means:
 
@@ -61,7 +61,7 @@ It includes:
 
 ---
 
-# 🎯 Goal of Landing Zone
+#  Goal of Landing Zone
 
 A Landing Zone should be:
 
@@ -75,7 +75,7 @@ A Landing Zone should be:
 
 ---
 
-# 🧱 Azure Landing Zone Architecture
+#  Azure Landing Zone Architecture
 
 ```text
 Management Group
@@ -97,7 +97,7 @@ Monitoring & Logging
 
 ---
 
-# 📁 Recommended Folder Structure (IMPORTANT)
+# Recommended Folder Structure (IMPORTANT)
 
 ```text
 landing-zone/
@@ -131,7 +131,7 @@ landing-zone/
 
 ---
 
-# 🔥 Why Modular Architecture?
+#  Why Modular Architecture?
 
 Without modules:
 
@@ -140,17 +140,17 @@ Without modules:
 ❌ Duplicate code
 ❌ Hard troubleshooting
 
-With modules:
+## With modules:
 
-✅ Reusable
-✅ Clean structure
-✅ Easy troubleshooting
-✅ Standardized infra
-✅ Team collaboration easier
+-  Reusable
+-  Clean structure
+-  Easy troubleshooting
+-  Standardized infra
+-  Team collaboration easier
 
 ---
 
-# 📦 Bicep Basics
+# Bicep Basics
 
 ---
 
@@ -209,7 +209,7 @@ param storageName string
 
 ---
 
-# 🚀 Resource Group Module
+# Resource Group Module
 
 ## modules/resource-group.bicep
 
@@ -227,7 +227,7 @@ output resourceGroupName string = rg.name
 
 ---
 
-# 🌐 Virtual Network Module
+#  Virtual Network Module
 
 ## modules/vnet.bicep
 
@@ -252,7 +252,7 @@ resource vnet 'Microsoft.Network/virtualNetworks@2023-02-01' = {
 
 ---
 
-# 🔐 NSG Module
+#  NSG Module
 
 ## modules/nsg.bicep
 
@@ -268,7 +268,7 @@ resource nsg 'Microsoft.Network/networkSecurityGroups@2023-02-01' = {
 
 ---
 
-# 💾 Storage Account Module
+#  Storage Account Module
 
 ```bicep
 param storageName string
@@ -291,7 +291,7 @@ resource stg 'Microsoft.Storage/storageAccounts@2023-01-01' = {
 
 ---
 
-# 🔑 Key Vault Module
+#  Key Vault Module
 
 ```bicep
 param keyVaultName string
@@ -315,7 +315,7 @@ resource kv 'Microsoft.KeyVault/vaults@2023-02-01' = {
 
 ---
 
-# ☸️ AKS Module
+#  AKS Module
 
 ```bicep
 param aksName string
@@ -346,7 +346,7 @@ resource aks 'Microsoft.ContainerService/managedClusters@2023-01-01' = {
 
 ---
 
-# 🛡️ Application Gateway + WAF
+#  Application Gateway + WAF
 
 ```bicep
 resource appgw 'Microsoft.Network/applicationGateways@2023-02-01' = {
@@ -364,7 +364,7 @@ resource appgw 'Microsoft.Network/applicationGateways@2023-02-01' = {
 
 ---
 
-# 📊 Log Analytics Workspace
+#  Log Analytics Workspace
 
 ```bicep
 resource logws 'Microsoft.OperationalInsights/workspaces@2022-10-01' = {
@@ -381,7 +381,7 @@ resource logws 'Microsoft.OperationalInsights/workspaces@2022-10-01' = {
 
 ---
 
-# 🧩 Main File (Orchestration Layer)
+#  Main File (Orchestration Layer)
 
 ## main.bicep
 
@@ -408,7 +408,7 @@ module vnet './modules/vnet.bicep' = {
 
 ---
 
-# 🌍 Multi-Environment Design
+#  Multi-Environment Design
 
 ## Why Important?
 
@@ -425,7 +425,7 @@ Different:
 
 ---
 
-# 📁 Environment Parameter Files
+#  Environment Parameter Files
 
 ## dev.parameters.json
 
@@ -443,7 +443,7 @@ Different:
 
 ---
 
-# 🚀 Deployment Commands
+#  Deployment Commands
 
 ## Login
 
@@ -474,7 +474,7 @@ az deployment group create \
 
 ---
 
-# 🔥 Best Practices (VERY IMPORTANT)
+#  Best Practices (VERY IMPORTANT)
 
 ---
 
@@ -520,12 +520,12 @@ qa-aks-ci
 
 # 4️⃣ Secure Everything
 
-✅ Private Endpoints
-✅ Key Vault
-✅ RBAC
-✅ NSGs
-✅ TLS1_2
-✅ WAF
+-  Private Endpoints
+- Key Vault
+- RBAC
+- NSGs
+- TLS1_2
+-  WAF
 
 ---
 
@@ -589,7 +589,7 @@ steps:
 
 ---
 
-# 🔐 DevSecOps Integration
+# DevSecOps Integration
 
 ---
 
@@ -617,7 +617,7 @@ steps:
 
 ---
 
-# 🛡️ Enterprise Security Best Practices
+#  Enterprise Security Best Practices
 
 | Area              | Best Practice    |
 | ----------------- | ---------------- |
@@ -632,7 +632,7 @@ steps:
 
 ---
 
-# ☁️ Recommended Landing Zone Components
+#  Recommended Landing Zone Components
 
 | Layer      | Services              |
 | ---------- | --------------------- |
@@ -647,7 +647,7 @@ steps:
 
 ---
 
-# 🧠 Real-Time Production Flow
+#  Real-Time Production Flow
 
 ```text
 Developer Pushes Code
@@ -671,7 +671,7 @@ Monitoring + Alerts Enabled
 
 ---
 
-# 🔥 Advanced Bicep Concepts
+#  Advanced Bicep Concepts
 
 ---
 
@@ -726,33 +726,33 @@ resource existingVnet 'Microsoft.Network/virtualNetworks@2023-02-01' existing = 
 
 Must monitor:
 
-✅ CPU
-✅ Memory
-✅ Pod Restart
-✅ Disk Usage
-✅ Failed Login
-✅ Network Traffic
+-  CPU
+-  Memory
+-  Pod Restart
+-  Disk Usage
+-  Failed Login
+-  Network Traffic
 
 ---
 
-# 📌 Azure Services You Must Learn for Landing Zone
+#  Azure Services You Must Learn for Landing Zone
 
 ## Networking
 
-* VNet
-* Subnet
-* NSG
-* Route Table
-* Private Endpoint
-* Application Gateway
-* Firewall
+- VNet
+-  Subnet
+-  NSG
+-  Route Table
+-  Private Endpoint
+-  Application Gateway
+-  Firewall
 
 ---
 
 ## Security
 
-* RBAC
-* Managed Identity
+-  RBAC
+-  Managed Identity
 * Key Vault
 * Defender for Cloud
 * Policies
@@ -761,45 +761,45 @@ Must monitor:
 
 ## Monitoring
 
-* Azure Monitor
-* Log Analytics
-* KQL
-* Alerts
+-  Azure Monitor
+-  Log Analytics
+-  KQL
+-  Alerts
 
 ---
 
 ## Compute
 
-* VM
-* VMSS
-* AKS
+-  VM
+-  VMSS
+-  AKS
 
 ---
 
-# 🎯 Final Goal
+#  Final Goal
 
 After learning this properly:
 
 ✅ You should be able to:
 
-* Create reusable infrastructure
-* Build enterprise landing zones
-* Automate Azure infra
-* Implement security best practices
-* Write production-level Bicep
-* Integrate CI/CD
-* Deploy AKS infrastructure
-* Handle real projects
+-  Create reusable infrastructure
+-  Build enterprise landing zones
+-  Automate Azure infra
+-  Implement security best practices
+-  Write production-level Bicep
+-  Integrate CI/CD
+-  Deploy AKS infrastructure
+-  Handle real projects
 
 ---
 
-# 🏁 Final Interview Line
+#  Final Interview Line
 
 > “I use Bicep to build reusable, modular, secure, and production-ready Azure Landing Zone infrastructure following Infrastructure as Code and DevOps best practices.”
 
 ---
 
-# 📚 NEXT LEARNING ROADMAP
+#  NEXT LEARNING ROADMAP
 
 ## Phase 1
 
@@ -837,11 +837,11 @@ After learning this properly:
 
 ---
 
-# 🔍 DEEP UNDERSTANDING — WHY EACH THING IS USED
+# DEEP UNDERSTANDING — WHY EACH THING IS USED
 
 ---
 
-# 📌 Why Resource Groups?
+# Why Resource Groups?
 
 Resource Group is a logical container in Azure.
 
@@ -865,7 +865,7 @@ all resources are grouped together.
 
 ---
 
-# 📌 Why Virtual Network (VNet)?
+#  Why Virtual Network (VNet)?
 
 VNet provides private networking in Azure.
 
@@ -889,7 +889,7 @@ communicate securely.
 
 ---
 
-# 📌 Why Subnets?
+# Why Subnets?
 
 Subnets divide VNet into smaller networks.
 
@@ -911,7 +911,7 @@ Always separate:
 
 ---
 
-# 📌 Why NSG?
+#  Why NSG?
 
 NSG = Network Security Group.
 
@@ -936,7 +936,7 @@ Deny:
 
 ---
 
-# 📌 Why ASG?
+#  Why ASG?
 
 ASG = Application Security Group.
 
@@ -958,7 +958,7 @@ Example:
 
 ---
 
-# 📌 Why Key Vault?
+#  Why Key Vault?
 
 Key Vault stores:
 
@@ -975,7 +975,7 @@ Key Vault stores:
 
 ---
 
-# 📌 Why Private Endpoint?
+#  Why Private Endpoint?
 
 Private Endpoint provides private connectivity.
 
@@ -997,7 +997,7 @@ Use Private Endpoint for:
 
 ---
 
-# 📌 Why Application Gateway?
+# Why Application Gateway?
 
 Application Gateway works as:
 
@@ -1015,7 +1015,7 @@ Application Gateway works as:
 
 ---
 
-# 📌 Why WAF?
+#  Why WAF?
 
 WAF = Web Application Firewall.
 
@@ -1031,7 +1031,7 @@ Production apps exposed to internet should use WAF.
 
 ---
 
-# 📌 Why AKS?
+#  Why AKS?
 
 AKS = Azure Kubernetes Service.
 
@@ -1044,7 +1044,7 @@ Used for:
 
 ---
 
-# 📌 Why ACR?
+#  Why ACR?
 
 ACR = Azure Container Registry.
 
@@ -1056,7 +1056,7 @@ Code → Docker Image → Push to ACR → Deploy to AKS
 
 ---
 
-# 📌 Why Azure Monitor?
+# Why Azure Monitor?
 
 Azure Monitor collects:
 
@@ -1074,7 +1074,7 @@ Without monitoring:
 
 ---
 
-# 📌 Why Log Analytics?
+#  Why Log Analytics?
 
 Central place for logs.
 
@@ -1089,7 +1089,7 @@ Example:
 
 ---
 
-# 📌 Why Managed Identity?
+#  Why Managed Identity?
 
 Managed Identity removes need of passwords.
 
@@ -1103,7 +1103,7 @@ Use:
 
 ---
 
-# 📌 Why RBAC?
+#  Why RBAC?
 
 RBAC = Role Based Access Control.
 
@@ -1126,7 +1126,7 @@ Principle:
 
 ---
 
-# 📌 Why Modules?
+#  Why Modules?
 
 Suppose:
 
@@ -1145,7 +1145,7 @@ With modules:
 
 ---
 
-# 📌 Why Parameter Files?
+#  Why Parameter Files?
 
 Different environments need different values.
 
@@ -1161,7 +1161,7 @@ Parameter files help manage environment-specific values.
 
 ---
 
-# 📌 Why CI/CD for Infrastructure?
+#  Why CI/CD for Infrastructure?
 
 Infrastructure should also follow DevOps.
 
@@ -1175,7 +1175,7 @@ Benefits:
 
 ---
 
-# 🏗️ COMPLETE LANDING ZONE IMPLEMENTATION FLOW
+# COMPLETE LANDING ZONE IMPLEMENTATION FLOW
 
 ---
 
@@ -1269,7 +1269,7 @@ Configure:
 
 ---
 
-# 🧠 REAL PRODUCTION BEST PRACTICES
+#  REAL PRODUCTION BEST PRACTICES
 
 | Area          | Best Practice                 |
 | ------------- | ----------------------------- |
@@ -1321,7 +1321,7 @@ modules/
 
 ---
 
-# 🧪 HOW TO TEST BICEP BEFORE DEPLOYMENT
+#  HOW TO TEST BICEP BEFORE DEPLOYMENT
 
 ---
 
@@ -1353,7 +1353,7 @@ before actual deployment.
 
 ---
 
-# 🚨 COMMON MISTAKES
+#  COMMON MISTAKES
 
 | Mistake             | Problem                    |
 | ------------------- | -------------------------- |
@@ -1366,7 +1366,7 @@ before actual deployment.
 
 ---
 
-# 🔥 FINAL REAL-WORLD ENTERPRISE FLOW
+#  FINAL REAL-WORLD ENTERPRISE FLOW
 
 ```text
 Developer Pushes Code
@@ -1394,7 +1394,7 @@ Application Deployment
 
 ---
 
-# 📚 RECOMMENDED LEARNING ORDER
+#  RECOMMENDED LEARNING ORDER
 
 ## Beginner
 
@@ -1435,7 +1435,7 @@ Application Deployment
 
 ---
 
-# 🎉 Congratulations
+#  Congratulations
 
 You now have a production-style roadmap for learning Azure Bicep and building enterprise-grade Landing Zones.
 

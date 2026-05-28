@@ -13,11 +13,15 @@ It is a modern alternative to ARM Templates.
 Instead of manually creating resources from Azure Portal:
 ---
 
-✅ We write code 
-✅ Store infra in Git
-✅ Reuse infra
-✅ Automate deployments
-✅ Maintain consistency
+## 🚀 Benefits of Infrastructure as Code
+
+- ✅ Infrastructure is fully automated
+- ✅ Deployments become repeatable
+- ✅ Reusable modules improve scalability
+- ✅ Git provides version control
+- ✅ Consistency across all environments
+- ✅ Faster deployments with CI/CD
+- ✅ Reduced manual errors
 
 ---
 
